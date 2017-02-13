@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+- 6.9.2
+deploy:
+  provider: cloudfoundry
+  api: https://api.run.pivotal.io
+  username: mrls@live.cn
+  password:
+    secure: uTXVpN7rLg8jgTAiJ4nfk4Zubbgtnts8uXH2lAS74wkrCH+6GvD4kP9DJXSZXSkjv33nB9/oeSndOUiesAol/rxn1qivl1tWmnPh5SIae/xR9exoKMj59+WLcOw2co9WV+Tvmn2ZEEk+//ydqoAg0sxJjE9qeF4O+3jghza9VZhGjTAUO40fXXf9xhdAQ/DouBgvpdWibN3ubamPvgRWPmGN3rvJbFqSeiMlM4inkQHlRV5OgxkYtzURARU8bWBtn/qPGxbJ13pYTW2XQQrVnMJ2gvvfb/HIGEuahkNJSgzeq6jc5+PnA0/buW8ejzPkhjdFID8AWjvj/WVYgdLu2ud1FJXqjcGuNbOyJCBoPr/DLyf1LY1skvC/ZBz+yYDJWgIlr2L/3FzWzfwsHKkcJsf4BkvK/qSlkM0K/YRkFti+X21F9uwOdx2Zqo746Nh8hSKcRfjuQa2AmuFaQcJclbKW8vD/RNk6hhm2R+g1tHKJSown5xVzXAEg3k345nQE2ldN/FoNPypLcRhAfhQQICUiJxxfCkx1CGbMoFsgSRBBgHI65osDjA+KOneiEPhkuAnW584uq1eizN9+fNGYmbTqqCgOzwKS5uIEVEIlvZwB+wIgQwTQG89IcdTXO2GfexKkYjLdHHXtGBr9arHZmo/QCPf4eTsaR5a2y1tHIYU=
+  organization: mrls-org
+  space: development
+  on:
+    repo: Soontao/node-travis-cf-demo
